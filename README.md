@@ -1,2 +1,2 @@
 # DeusMaksler.github.io
-Time table
+Timetable
