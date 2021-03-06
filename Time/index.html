@@ -1,360 +1,348 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Папочка 20ВИ2</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script>
-        function showFirstWeek() {
-            document.getElementsByClassName('timetable-contain')[1].style.display = "none";
-            document.getElementsByClassName('timetable-contain')[0].style.display = "block";
-        }
-    </script>
-
-    <script>
-        function showSecondWeek() {
-            document.getElementsByClassName('timetable-contain')[0].style.display = "none";
-            document.getElementsByClassName('timetable-contain')[1].style.display = "block";
-        }
-    </script>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Папочка 20ВИ2</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container">
-        <h1 class="timetable-header">Расписание 20ВИ2</h1>
+<div class="container">
+  <h1 class="timetable-header">Расписание 20ВИ2</h1>
 
-        <div class="week-btn-bar">
-            <button onclick="showFirstWeek()" class="btn week-btn">Первая неделя</button>
-            <button onclick="showSecondWeek()" class="btn week-btn">Вторая неделя</button>
-        </div>
+  <div class="week-btn-bar"></div>
 
-        <article class="timetable-contain">
-            <table class="timetable">
-                <h2 class="timetable-caption">Расписание на первую неделю</h2>
+  <article class="timetable-contain" data-button-name="Первая неделя">
+    <h2 class="timetable-caption">Расписание на первую неделю</h2>
+    <table class="timetable">
+      <thead>
+      <tr>
+        <th class="verticalTableHeader">
+          <span>Время</span>
+        </th>
+        <th class="verticalTableHeader">
+          <span>Понедельник</span>
+        </th>
+        <th class="verticalTableHeader">
+          <span>Вторник</span>
+        </th>
+        <th class="verticalTableHeader">
+          <span>Среда</span>
+        </th>
+        <th class="verticalTableHeader">
+          <span>Четверг</span>
+        </th>
+        <th class="verticalTableHeader">
+          <span>Пятница</span>
+        </th>
+        <th class="verticalTableHeader">
+          <span>Суббота</span>
+        </th>
+      </tr>
+      </thead>
 
-                <thead>
-                    <tr>
-                        <th class="verticalTableHeader">
-                            <p>Время</p>
-                        </th>
-                        <th class="verticalTableHeader">
-                            <p>Понедельник</p>
-                        </th>
-                        <th class="verticalTableHeader">
-                            <p>Вторник</p>
-                        </th>
-                        <th class="verticalTableHeader">
-                            <p>Среда</p>
-                        </th>
-                        <th class="verticalTableHeader">
-                            <p>Чечтверг</p>
-                        </th>
-                        <th class="verticalTableHeader">
-                            <p>Пятница</p>
-                        </th>
-                        <th class="verticalTableHeader">
-                            <p>Суббота</p>
-                        </th>
-                    </tr>
-                </thead>
+      <tbody>
+      <tr>
+        <td class="verticalTableHeader">
+          <span>8:00</span>
+        </td>
+        <td class="verticalTableHeader"></td>
+        <td class="verticalTableHeader"></td>
+        <td class="verticalTableHeader"></td>
+        <td class="verticalTableHeader">
+          <span>Физика лек</span>
+        </td>
+        <td class="verticalTableHeader">
+          <span>Физика пр</span>
+        </td>
+        <td class="verticalTableHeader">
+          <span>Прав ведение лек</span>
+        </td>
+      </tr>
 
-                <tbody>
-                    <tr>
-                        <td class="verticalTableHeader">
-                            <p>8:00</p>
-                        </td>
-                        <td class="verticalTableHeader"></td>
-                        <td class="verticalTableHeader"></td>
-                        <td class="verticalTableHeader"></td>
-                        <td class="verticalTableHeader">
-                            <p>Физика лек</p>
-                        </td>
-                        <td class="verticalTableHeader">
-                            <p>Физика пр</p>
-                        </td>
-                        <td class="verticalTableHeader">
-                            <p>Правведение лек</p>
-                        </td>
-                    </tr>
+      <tr>
+        <td class="verticalTableHeader">
+          <span>9:50</span>
+        </td>
+        <td class="verticalTableHeader"></td>
+        <td class="verticalTableHeader"></td>
+        <td class="verticalTableHeader">
+          <span>ИТ в ПД лб</span>
+        </td>
+        <td class="verticalTableHeader">
+          <span>Математика лек</span>
+        </td>
+        <td class="verticalTableHeader">
+          <span>Математика пр</span>
+        </td>
+        <td class="verticalTableHeader">
+          <span>МатЛогика лек</span>
+        </td>
+      </tr>
 
-                    <tr>
-                        <td class="verticalTableHeader">
-                            <p>9:50</p>
-                        </td>
-                        <td class="verticalTableHeader"></td>
-                        <td class="verticalTableHeader"></td>
-                        <td class="verticalTableHeader">
-                            <p>ИТ в ПД лб</p>
-                        </td>
-                        <td class="verticalTableHeader">
-                            <p>Математика лек</p>
-                        </td>
-                        <td class="verticalTableHeader">
-                            <p>Математика пр</p>
-                        </td>
-                        <td class="verticalTableHeader">
-                            <p>МатЛогика лек</p>
-                        </td>
-                    </tr>
+      <tr>
+        <td class="verticalTableHeader">
+          <span>11:40</span>
+        </td>
+        <td class="verticalTableHeader"></td>
+        <td class="verticalTableHeader">
+          <span>Физкультура</span>
+        </td>
+        <td class="verticalTableHeader">
+          <span>ДА ИС лб</span>
+        </td>
+        <td class="verticalTableHeader">
+          <span>ВСП лек</span>
+        </td>
+        <td class="verticalTableHeader">
+          <span>Физкультура</span>
+        </td>
+        <td class="verticalTableHeader">
+          <span>ДА ИС лек</span>
+        </td>
+      </tr>
 
-                    <tr>
-                        <td class="verticalTableHeader">
-                            <p>11:40</p>
-                        </td>
-                        <td class="verticalTableHeader"></td>
-                        <td class="verticalTableHeader">
-                            <p>Физкультура</p>
-                        </td>
-                        <td class="verticalTableHeader">
-                            <p>ДА ИС лб</p>
-                        </td>
-                        <td class="verticalTableHeader">
-                            <p>ВСП лек</p>
-                        </td>
-                        <td class="verticalTableHeader">
-                            <p>Физкультура</p>
-                        </td>
-                        <td class="verticalTableHeader">
-                            <p>ДА ИС лек</p>
-                        </td>
-                    </tr>
+      <tr>
+        <td class="verticalTableHeader">
+          <span>13:45</span>
+        </td>
+        <td class="verticalTableHeader">
+          <span>Правоведение</span>
+        </td>
+        <td class="verticalTableHeader">
+          <span>Иностранный язык</span>
+        </td>
+        <td class="verticalTableHeader">
+          <span>ВСП лб</span>
+        </td>
+        <td class="verticalTableHeader"></td>
+        <td class="verticalTableHeader"></td>
+        <td class="verticalTableHeader"></td>
+      </tr>
+      </tbody>
+    </table>
+  </article>
 
-                    <tr>
-                        <td class="verticalTableHeader">
-                            <p>13:45</p>
-                        </td>
-                        <td class="verticalTableHeader">
-                            <p>Правоведение</p>
-                        </td>
-                        <td class="verticalTableHeader">
-                            <p>Иностранный язык</p>
-                        </td>
-                        <td class="verticalTableHeader">
-                            <p>ВСП лб</p>
-                        </td>
-                        <td class="verticalTableHeader"></td>
-                        <td class="verticalTableHeader"></td>
-                        <td class="verticalTableHeader"></td>
-                    </tr>
-                </tbody>
-            </table>
-        </article>
+  <article class="timetable-contain" data-button-name="Вторая неделя">
+    <h2 class="timetable-caption">Расписание на вторую неделю</h2>
+    <table class="timetable">
+      <thead>
+      <tr>
+        <th class="verticalTableHeader">
+          <span>Время</span>
+        </th>
+        <th class="verticalTableHeader">
+          <span>Понедельник</span>
+        </th>
+        <th class="verticalTableHeader">
+          <span>Вторник</span>
+        </th>
+        <th class="verticalTableHeader">
+          <span>Среда</span>
+        </th>
+        <th class="verticalTableHeader">
+          <span>Четверг</span>
+        </th>
+        <th class="verticalTableHeader">
+          <span>Пятница</span>
+        </th>
+        <th class="verticalTableHeader">
+          <span>Суббота</span>
+        </th>
+      </tr>
+      </thead>
 
-        <article class="timetable-contain">
-            <table class="timetable">
-                <h2 class="timetable-caption">Расписание на вторую неделю</h2>
+      <tbody>
+      <tr>
+        <td class="verticalTableHeader">
+          <span>8:00</span>
+        </td>
+        <td class="verticalTableHeader"></td>
+        <td class="verticalTableHeader"></td>
+        <td class="verticalTableHeader"></td>
+        <td class="verticalTableHeader">
+          <span>Физика лек</span>
+        </td>
+        <td class="verticalTableHeader">
+          <span>Физика пр</span>
+        </td>
+        <td class="verticalTableHeader"></td>
+      </tr>
 
-                <thead>
-                    <tr>
-                        <th class="verticalTableHeader">
-                            <p>Время</p>
-                        </th>
-                        <th class="verticalTableHeader">
-                            <p>Понедельник</p>
-                        </th>
-                        <th class="verticalTableHeader">
-                            <p>Вторник</p>
-                        </th>
-                        <th class="verticalTableHeader">
-                            <p>Среда</p>
-                        </th>
-                        <th class="verticalTableHeader">
-                            <p>Чечтверг</p>
-                        </th>
-                        <th class="verticalTableHeader">
-                            <p>Пятница</p>
-                        </th>
-                        <th class="verticalTableHeader">
-                            <p>Суббота</p>
-                        </th>
-                    </tr>
-                </thead>
+      <tr>
+        <td class="verticalTableHeader">
+          <span>9:50</span>
+        </td>
+        <td class="verticalTableHeader">
+          <span>КурЧас</span>
+        </td>
+        <td class="verticalTableHeader"></td>
+        <td class="verticalTableHeader">
+          <span>ИТ в ПД лб</span>
+        </td>
+        <td class="verticalTableHeader">
+          <span>Математика лек</span>
+        </td>
+        <td class="verticalTableHeader">
+          <span>Математика пр</span>
+        </td>
+        <td class="verticalTableHeader"></td>
+      </tr>
 
-                <tbody>
-                    <tr>
-                        <td class="verticalTableHeader">
-                            <p>8:00</p>
-                        </td>
-                        <td class="verticalTableHeader"></td>
-                        <td class="verticalTableHeader"></td>
-                        <td class="verticalTableHeader"></td>
-                        <td class="verticalTableHeader">
-                            <p>Физика лек</p>
-                        </td>
-                        <td class="verticalTableHeader">
-                            <p>Физика пр</p>
-                        </td>
-                        <td class="verticalTableHeader"></td>
-                    </tr>
+      <tr>
+        <td class="verticalTableHeader">
+          <span>11:40</span>
+        </td>
+        <td class="verticalTableHeader">
+          <span>Математика пр</span>
+        </td>
+        <td class="verticalTableHeader">
+          <span>Физкультура</span>
+        </td>
+        <td class="verticalTableHeader">
+          <span>ДА ИС лб</span>
+        </td>
+        <td class="verticalTableHeader">
+          <span>ВСП лек</span>
+        </td>
+        <td class="verticalTableHeader">
+          <span>Физкультура</span>
+        </td>
+        <td class="verticalTableHeader"></td>
+      </tr>
 
-                    <tr>
-                        <td class="verticalTableHeader">
-                            <p>9:50</p>
-                        </td>
-                        <td class="verticalTableHeader">
-                            <p>КурЧас</p>
-                        </td>
-                        <td class="verticalTableHeader"></td>
-                        <td class="verticalTableHeader">
-                            <p>ИТ в ПД лб</p>
-                        </td>
-                        <td class="verticalTableHeader">
-                            <p>Математика лек</p>
-                        </td>
-                        <td class="verticalTableHeader">
-                            <p>Математика пр</p>
-                        </td>
-                        <td class="verticalTableHeader"></td>
-                    </tr>
+      <tr>
+        <td class="verticalTableHeader">
+          <span>13:45</span>
+        </td>
+        <td class="verticalTableHeader">
+          <span>МатЛогика лб</span>
+        </td>
+        <td class="verticalTableHeader">
+          <span>Иностранный язык</span>
+        </td>
+        <td class="verticalTableHeader">
+          <span>ВСП лб</span>
+        </td>
+        <td class="verticalTableHeader"></td>
+        <td class="verticalTableHeader"></td>
+        <td class="verticalTableHeader"></td>
+      </tr>
+      </tbody>
+    </table>
+  </article>
 
-                    <tr>
-                        <td class="verticalTableHeader">
-                            <p>11:40</p>
-                        </td>
-                        <td class="verticalTableHeader">
-                            <p>Математика пр</p>
-                        </td>
-                        <td class="verticalTableHeader">
-                            <p>Физкультура</p>
-                        </td>
-                        <td class="verticalTableHeader">
-                            <p>ДА ИС лб</p>
-                        </td>
-                        <td class="verticalTableHeader">
-                            <p>ВСП лек</p>
-                        </td>
-                        <td class="verticalTableHeader">
-                            <p>Физкультура</p>
-                        </td>
-                        <td class="verticalTableHeader"></td>
-                    </tr>
+  <h2 class="timetable-caption">Ссылки на занятия</h2>
 
-                    <tr>
-                        <td class="verticalTableHeader">
-                            <p>13:45</p>
-                        </td>
-                        <td class="verticalTableHeader">
-                            <p>МатЛогика лб</p>
-                        </td>
-                        <td class="verticalTableHeader">
-                            <p>Иностранный язык</p>
-                        </td>
-                        <td class="verticalTableHeader">
-                            <p>ВСП лб</p>
-                        </td>
-                        <td class="verticalTableHeader"></td>
-                        <td class="verticalTableHeader"></td>
-                        <td class="verticalTableHeader"></td>
-                    </tr>
-                </tbody>
-            </table>
-        </article>
+  <ul class="lesson-list">
+    <li class="lesson-list-item">
+      <section class="lesson-card">
+        <h3 class="lesson-card-header">ВСП</h3>
 
-        <h2 class="timetable-caption">Ссылки на занятия</h2>
+        <p class="zoom-arguments">
+          <span> 470 439 3709 </span>
+          <span> 4pzBXV </span>
+        </p>
 
-        <ul class="lesson-list">
-            <li class="lesson-list-item">
-                <section class="lesson-card">
-                    <h3 class="lesson-card-header">ВСП</h3>
+        <a class="btn" href="https://us04web.zoom.us/j/4704393709?pwd=cUdpZWFaRXloQmVRSmlaNDV6d0dyZz09#success"
+           target="_blank">
+          <div>Ссылка на конференцию</div>
+        </a>
+      </section>
+    </li>
 
-                    <p class="zoom-arguments">
-                        <span> 470 439 3709 </span>
-                        <span> 4pzBXV </span>
-                    </p>
-                    
-                    <a class="btn" target="_blank" href="https://us04web.zoom.us/j/4704393709?pwd=cUdpZWFaRXloQmVRSmlaNDV6d0dyZz09#success">
-                        <div>Ссылка на конференцию</div>
-                    </a>
-                </section>
-            </li>
+    <li class="lesson-list-item">
+      <section class="lesson-card">
+        <h3 class="lesson-card-header">ДА ИС</h3>
 
-            <li class="lesson-list-item">
-                <section class="lesson-card">
-                    <h3 class="lesson-card-header">ДА ИС</h3>
+        <p class="zoom-arguments">
+          <span> 741 5339 0010 </span>
+          <span> 2Hhng0 </span>
+        </p>
 
-                    <p class="zoom-arguments">
-                        <span> 741 5339 0010 </span>
-                        <span> 2Hhng0 </span>
-                    </p>
-                    
-                    <a class="btn" target="_blank" href="https://us04web.zoom.us/j/74153390010?pwd=RXdZRUVRMWJUd29GczYwSDhJNC9YZz09#success">
-                        <div>Ссылка на конференцию</div>
-                    </a>
-                </section>
-            </li>
+        <a class="btn" href="https://us04web.zoom.us/j/74153390010?pwd=RXdZRUVRMWJUd29GczYwSDhJNC9YZz09#success"
+           target="_blank">
+          <div>Ссылка на конференцию</div>
+        </a>
+      </section>
+    </li>
+    </li>
 
-            <li class="lesson-list-item">
-                <section class="lesson-card">
-                    <h3 class="lesson-card-header">ИТ в ПД</h3>
+    <li class="lesson-list-item">
+      <section class="lesson-card">
+        <h3 class="lesson-card-header">ИТ в ПД</h3>
 
-                    <p class="zoom-arguments">
-                        <span> 873 9361 7971 </span>
-                        <span> zH3yF4 </span>
-                    </p>
-                    
-                    <a class="btn" target="_blank" href="https://us05web.zoom.us/j/87393617971?pwd=aFFyZEltUllYK2ljZFMyRkh0M3oxdz09#success">
-                        <div>Ссылка на конференцию</div>
-                    </a>
-                </section>
-            </li>
+        <p class="zoom-arguments">
+          <span> 873 9361 7971 </span>
+          <span> zH3yF4 </span>
+        </p>
 
-            <li class="lesson-list-item">
-                <section class="lesson-card">
-                    <h3 class="lesson-card-header">ВышМат</h3>
+        <a class="btn" href="https://us05web.zoom.us/j/87393617971?pwd=aFFyZEltUllYK2ljZFMyRkh0M3oxdz09#success"
+           target="_blank">
+          <div>Ссылка на конференцию</div>
+        </a>
+      </section>
+    </li>
 
-                    <p class="zoom-arguments">
-                        <span> 759 7409 8629 </span>
-                        <span> 1nU6TH </span>
-                    </p>
-                    
-                    <a class="btn" target="_blank" href="https://us04web.zoom.us/j/75974098629?pwd=MUxSMDZ4bnBaeElaQ1llMmJzekVTdz09">
-                        <div>Ссылка на конференцию</div>
-                    </a>
-                </section>
-            </li>
+    <li class="lesson-list-item">
+      <section class="lesson-card">
+        <h3 class="lesson-card-header">ВышМат</h3>
 
-            <li class="lesson-list-item">
-                <section class="lesson-card">
-                    <h3 class="lesson-card-header">Физика</h3>
+        <p class="zoom-arguments">
+          <span> 759 7409 8629 </span>
+          <span> 1nU6TH </span>
+        </p>
 
-                    <p class="zoom-arguments">
-                        <span> 388 167 8889 </span>
-                        <span> 1GnL1S </span>
-                    </p>
-                    
-                    <a class="btn" target="_blank" href="https://us04web.zoom.us/j/3881678889?pwd=KzlRejJ0dnB6SCszOVVzSkhOUm9UUT09">
-                        <div>Ссылка на конференцию</div>
-                    </a>
-                </section>
-            </li>
+        <a class="btn" href="https://us04web.zoom.us/j/75974098629?pwd=MUxSMDZ4bnBaeElaQ1llMmJzekVTdz09"
+           target="_blank">
+          <div>Ссылка на конференцию</div>
+        </a>
+      </section>
+    </li>
 
-            <li class="lesson-list-item">
-                <section class="lesson-card">
-                    <h3 class="lesson-card-header">Право</h3>
+    <li class="lesson-list-item">
+      <section class="lesson-card">
+        <h3 class="lesson-card-header">Физика</h3>
 
-                    <p class="zoom-arguments">
-                        <span> 598 130 7260 </span>
-                        <span> uQDta5 </span>
-                    </p>
-                    
-                    <a class="btn" target="_blank" href="https://us04web.zoom.us/j/5981307260?pwd=VDBhWnFzUUtLVlBNWEUzS2Z3em5Ydz09">
-                        <div>Ссылка на конференцию</div>
-                    </a>
-                </section>
-            </li>
+        <p class="zoom-arguments">
+          <span> 388 167 8889 </span>
+          <span> 1GnL1S </span>
+        </p>
 
-            <li class="lesson-list-item">
-                <section class="lesson-card">
-                    <h3 class="lesson-card-header">Папочка со всеми материалами</h3>
-                    
-                    <a class="btn" target="_blank" href="https://drive.google.com/drive/folders/1_eBBa8pRYQDWYEcpNk6EbRZsOhp78aTn">
-                        <div>Ссылка на Google Disk</div>
-                    </a>
-                </section>
-            </li>
-        </ul>
-    </div>
+        <a class="btn" href="https://us04web.zoom.us/j/3881678889?pwd=KzlRejJ0dnB6SCszOVVzSkhOUm9UUT09" target="_blank">
+          <div>Ссылка на конференцию</div>
+        </a>
+      </section>
+    </li>
+
+    <li class="lesson-list-item">
+      <section class="lesson-card">
+        <h3 class="lesson-card-header">Право</h3>
+
+        <p class="zoom-arguments">
+          <span> 598 130 7260 </span>
+          <span> uQDta5 </span>
+        </p>
+
+        <a class="btn" href="https://us04web.zoom.us/j/5981307260?pwd=VDBhWnFzUUtLVlBNWEUzS2Z3em5Ydz09" target="_blank">
+          <div>Ссылка на конференцию</div>
+        </a>
+      </section>
+    </li>
+
+    <li class="lesson-list-item">
+      <section class="lesson-card">
+        <h3 class="lesson-card-header">Папочка со всеми материалами</h3>
+
+        <a class="btn" href="https://drive.google.com/drive/folders/1_eBBa8pRYQDWYEcpNk6EbRZsOhp78aTn" target="_blank">
+          <div>Ссылка на Google Disk</div>
+        </a>
+      </section>
+    </li>
+  </ul>
+</div>
+<script src="scripts/tt.js"></script>
 </body>
 </html>

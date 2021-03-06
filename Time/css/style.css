@@ -43,8 +43,11 @@ th, td {
     justify-content: center;
 }
 
-.week-btn:nth-child(2) {
+.week-btn {
     margin-left: 20px;
+}
+.week-btn:first-child {
+    margin-left: initial;
 }
 
 .timetable {
@@ -126,12 +129,12 @@ and (max-device-width : 760px) {
         transform: rotate(90deg);
     }
 
-    .verticalTableHeader p {
+    .verticalTableHeader span {
         margin:0 -999px; /* virtually reduce space needed on width to very little */
         display:inline-block;
     }
-    
-    .verticalTableHeader p:before {
+
+    .verticalTableHeader span:before {
         content:'';
         width:0;
         padding-top:110%; /* takes width as reference, + 10% for faking some extra padding */
