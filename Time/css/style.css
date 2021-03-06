@@ -23,6 +23,10 @@ th, td {
     border-collapse: collapse;
 }
 
+.verticalTableHeader p {
+    margin: 0;
+}
+
 .container {
     max-width: 1200px;
     margin-right: auto;
@@ -109,13 +113,29 @@ th, td {
 
 .gm-title {
     color: red;
-}  
+}
 
 /* CSS Mobile*/
 @media only screen
 and (min-device-width : 320px)
 and (max-device-width : 760px) {
-    .week-btn-bar {
-        display: none;
+
+    .verticalTableHeader {
+        text-align:center;
+        white-space:nowrap;
+        transform: rotate(90deg);
+    }
+
+    .verticalTableHeader p {
+        margin:0 -999px; /* virtually reduce space needed on width to very little */
+        display:inline-block;
+    }
+    
+    .verticalTableHeader p:before {
+        content:'';
+        width:0;
+        padding-top:110%; /* takes width as reference, + 10% for faking some extra padding */
+        display:inline-block;
+        vertical-align:middle;
     }
 }
