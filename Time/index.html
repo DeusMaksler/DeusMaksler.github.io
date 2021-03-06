@@ -6,15 +6,33 @@
     <title>Папочка 20ВИ2</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <script>
+        function showFirstWeek() {
+            document.getElementsByClassName('timetable-contain')[1].style.display = "none";
+            document.getElementsByClassName('timetable-contain')[0].style.display = "block";
+        }
+    </script>
+
+    <script>
+        function showSecondWeek() {
+            document.getElementsByClassName('timetable-contain')[0].style.display = "none";
+            document.getElementsByClassName('timetable-contain')[1].style.display = "block";
+        }
+    </script>
 </head>
 
 <body>
     <div class="container">
-        <h1 class="time-table-header">Расписание 20ВИ2</h1>
+        <h1 class="timetable-header">Расписание 20ВИ2</h1>
 
-        <article class="time-table-contain">
-            <table class="time-table">
-                <h2 class="time-table-caption">Расписание на первую неделю</h2>
+        <div class="week-btn-bar">
+            <button onclick="showFirstWeek()" class="btn week-btn">Первая неделя</button>
+            <button onclick="showSecondWeek()" class="btn week-btn">Вторая неделя</button>
+        </div>
+
+        <article class="timetable-contain">
+            <table class="timetable">
+                <h2 class="timetable-caption">Расписание на первую неделю</h2>
 
                 <thead>
                     <tr>
@@ -72,9 +90,9 @@
             </table>
         </article>
 
-        <article class="time-table-contain">
-            <table class="time-table">
-                <h2 class="time-table-caption">Расписание на вторую неделю</h2>
+        <article class="timetable-contain">
+            <table class="timetable">
+                <h2 class="timetable-caption">Расписание на вторую неделю</h2>
 
                 <thead>
                     <tr>
@@ -132,7 +150,7 @@
             </table>
         </article>
 
-        <h2 class="time-table-caption">Ссылки на занятия</h2>
+        <h2 class="timetable-caption">Ссылки на занятия</h2>
 
         <ul class="lesson-list">
             <li class="lesson-list-item">
