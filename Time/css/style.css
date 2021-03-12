@@ -63,6 +63,10 @@ th, td {
     margin-bottom: 20px;
 }
 
+.ds-lesson {
+    background-color: rgba(65, 105, 225, 0.15);  
+}
+
 .lesson-list {
     display: flex;
     justify-content: space-between;
@@ -112,10 +116,6 @@ th, td {
     background-color: #4169E1;
     border: 1px solid #4169E1;
     box-shadow: 0 0 10px #b2e2e9;
-}
-
-.gm-title {
-    color: red;
 }
 
 /* CSS Mobile*/
