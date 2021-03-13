@@ -122,6 +122,9 @@ th, td {
 @media only screen
 and (min-device-width : 320px)
 and (max-device-width : 760px) {
+    .ds-lesson {
+        background-color: rgba(65, 105, 225, 0);  
+    }   
 
     .verticalTableHeader {
         text-align:center;
